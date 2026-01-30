@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://v8sac0ix22jf" path="res://icon.svg" id="1_l5jy4"]
 [ext_resource type="Script" uid="uid://cviwjpl8li78u" path="res://button_test.gd" id="2_tou82"]
+[ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://test.gd" id="3_udjck"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udjck"]
 bg_color = Color(0.34998897, 0.48212677, 0.416896, 1)
@@ -121,5 +122,8 @@ text = "click me
 
 [node name="MaskBase" type="Sprite2D" parent="." unique_id=879185215]
 position = Vector2(859, 321)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1683765417]
+script = ExtResource("3_udjck")
 
 [connection signal="pressed" from="MaskPieces/GridContainer/Button" to="MaskPieces/GridContainer/Button" method="_on_pressed"]
