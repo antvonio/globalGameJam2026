@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bgedchu7o066v"]
 
-[ext_resource type="Texture2D" uid="uid://v8sac0ix22jf" path="res://icon.svg" id="1_l5jy4"]
-[ext_resource type="Script" uid="uid://cviwjpl8li78u" path="res://button_test.gd" id="2_tou82"]
-[ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://test.gd" id="3_udjck"]
+[ext_resource type="Texture2D" uid="uid://v8sac0ix22jf" path="res://icons/icon.svg" id="1_nbemg"]
+[ext_resource type="Script" uid="uid://cviwjpl8li78u" path="res://scripts/button_test.gd" id="2_2hkg8"]
+[ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://scripts/test.gd" id="3_r1lkl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udjck"]
 bg_color = Color(0.34998897, 0.48212677, 0.416896, 1)
@@ -69,9 +69,9 @@ custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
-icon = ExtResource("1_l5jy4")
-script = ExtResource("2_tou82")
-new_texture = "res://icon.svg"
+icon = ExtResource("1_nbemg")
+script = ExtResource("2_2hkg8")
+new_texture = "res://icons/icon.svg"
 
 [node name="GridContainer2" type="GridContainer" parent="MaskPieces" unique_id=1383723580]
 layout_mode = 1
@@ -123,7 +123,7 @@ text = "click me
 [node name="MaskBase" type="Sprite2D" parent="." unique_id=879185215]
 position = Vector2(859, 321)
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1683765417]
-script = ExtResource("3_udjck")
+[node name="InventoryManager" type="Node2D" parent="." unique_id=1683765417]
+script = ExtResource("3_r1lkl")
 
 [connection signal="pressed" from="MaskPieces/GridContainer/Button" to="MaskPieces/GridContainer/Button" method="_on_pressed"]
