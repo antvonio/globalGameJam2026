@@ -1,3 +1,125 @@
-[gd_scene format=3 uid="uid://babutqxjyfvex"]
+[gd_scene format=3 uid="uid://bgedchu7o066v"]
 
-[node name="Node3D" type="Node3D" unique_id=338881927]
+[ext_resource type="Texture2D" uid="uid://v8sac0ix22jf" path="res://icon.svg" id="1_l5jy4"]
+[ext_resource type="Script" uid="uid://cviwjpl8li78u" path="res://button_test.gd" id="2_tou82"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udjck"]
+bg_color = Color(0.34998897, 0.48212677, 0.416896, 1)
+
+[node name="UI" type="Control" unique_id=297674763]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=210280931]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Mask" type="Panel" parent="." unique_id=313776310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 635.0
+offset_top = 43.0
+offset_right = -77.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MaskPieces" type="Panel" parent="." unique_id=1451109478]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 40.0
+offset_right = -566.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="MaskPieces" unique_id=1243759928]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.75
+offset_top = -174.5
+offset_right = 249.75
+offset_bottom = 249.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 33
+theme_override_constants/v_separation = 20
+columns = 4
+
+[node name="Button" type="Button" parent="MaskPieces/GridContainer" unique_id=810634950]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+icon = ExtResource("1_l5jy4")
+script = ExtResource("2_tou82")
+new_texture = "res://icon.svg"
+
+[node name="GridContainer2" type="GridContainer" parent="MaskPieces" unique_id=1383723580]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = -21.0
+offset_bottom = 69.0
+grow_horizontal = 2
+theme_override_constants/h_separation = 46
+columns = 5
+
+[node name="Button9" type="Button" parent="MaskPieces/GridContainer2" unique_id=1049537976]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"
+
+[node name="Button11" type="Button" parent="MaskPieces/GridContainer2" unique_id=302017786]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"
+
+[node name="Button12" type="Button" parent="MaskPieces/GridContainer2" unique_id=1209688284]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"
+
+[node name="Button13" type="Button" parent="MaskPieces/GridContainer2" unique_id=320189254]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"
+
+[node name="Button10" type="Button" parent="MaskPieces/GridContainer2" unique_id=2139085246]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"
+
+[node name="MaskBase" type="Sprite2D" parent="." unique_id=879185215]
+position = Vector2(859, 321)
+
+[connection signal="pressed" from="MaskPieces/GridContainer/Button" to="MaskPieces/GridContainer/Button" method="_on_pressed"]
