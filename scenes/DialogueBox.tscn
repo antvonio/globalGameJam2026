@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://jdtykg5h4bro"]
 
-[ext_resource type="Script" path="res://scenes/dialogue_box.gd" id="1_r2og1"]
-[ext_resource type="Script" path="res://scenes/npc.gd" id="2_giuoe"]
+[ext_resource type="Script" uid="uid://7h7cancku032" path="res://scenes/dialogue_box.gd" id="1_r2og1"]
+[ext_resource type="Texture2D" uid="uid://d3wkhyewime51" path="res://icons/UI_Assets/chiusura.png" id="2_1n5wf"]
 
 [node name="DialogueBox" type="Control" unique_id=2074582808 groups=["DialogueBox"]]
 visible = false
@@ -33,6 +33,4 @@ text = "Salve, ho bisogno di una maschera con LENTI."
 
 [node name="NextButton" type="Button" parent="Panel/VBoxContainer" unique_id=1525067320]
 layout_mode = 2
-
-[node name="NPC" type="Node2D" parent="Panel/VBoxContainer" unique_id=1732182253]
-script = ExtResource("2_giuoe")
+icon = ExtResource("2_1n5wf")

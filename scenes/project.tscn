@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://bgedchu7o066v"]
 
 [ext_resource type="Script" uid="uid://c43l14sx3cv75" path="res://scripts/MaskRenderer.gd" id="1_2hkg8"]
-[ext_resource type="Script" uid="uid://cfsdnq3d4h2u3" path="res://scripts/UIMaskHandler.gd" id="1_nbemg"]
+[ext_resource type="Script" path="res://scripts/UIMaskHandler.gd" id="1_nbemg"]
 [ext_resource type="Script" uid="uid://dlgvk6a76qwkn" path="res://scripts/MaskManager.gd" id="2_6xffl"]
 [ext_resource type="Shader" uid="uid://bmh6v6gyp6hyg" path="res://scenes/project.gdshader" id="2_r1lkl"]
 [ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://scripts/InventoryManager.gd" id="3_r1lkl"]
-[ext_resource type="Script" uid="uid://dla3q0mj8ujvh" path="res://scenes/colorButton.gd" id="4_ioxnp"]
+[ext_resource type="Script" path="res://scenes/colorButton.gd" id="4_ioxnp"]
 [ext_resource type="Texture2D" uid="uid://btrj2bxlh8im7" path="res://icons/UI_Assets/color_wheel.png" id="5_6ipd3"]
-[ext_resource type="Script" uid="uid://vpriluoayk8n" path="res://scenes/section_color.gd" id="5_djuk3"]
+[ext_resource type="Script" path="res://scenes/section_color.gd" id="5_djuk3"]
 [ext_resource type="Script" uid="uid://cbj1jllypqw2j" path="res://scenes/ItemDB.gd" id="6_uthkf"]
+[ext_resource type="PackedScene" uid="uid://jdtykg5h4bro" path="res://scenes/DialogueBox.tscn" id="10_hyn5d"]
+[ext_resource type="Script" path="res://scenes/talk_button.gd" id="11_dsnwd"]
+[ext_resource type="Script" uid="uid://ccd3nenpxsiyx" path="res://scripts/npc.gd" id="12_sa0gx"]
 
 [sub_resource type="Theme" id="Theme_2hkg8"]
 
@@ -403,3 +406,17 @@ script = ExtResource("2_6xffl")
 
 [node name="ItemDB" type="Node2D" parent="." unique_id=1763629722]
 script = ExtResource("6_uthkf")
+
+[node name="DialogueBox" parent="." unique_id=2074582808 instance=ExtResource("10_hyn5d")]
+layout_mode = 0
+
+[node name="TalkButton" type="Button" parent="." unique_id=1071708277]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Parla"
+script = ExtResource("11_dsnwd")
+npc_path = NodePath("../NPC")
+
+[node name="NPC" type="Node2D" parent="." unique_id=786657073]
+script = ExtResource("12_sa0gx")
