@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://82blfs3fi1pb"
-path="res://.godot/imported/maschera_1.png-3be62c7383d121a18808515b0163338c.ctex"
+uid="uid://chcc4fwgi4bqt"
+path="res://.godot/imported/void_eyes.png-52246e6104029b80261961ec4fce214b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://maschera_1.png"
-dest_files=["res://.godot/imported/maschera_1.png-3be62c7383d121a18808515b0163338c.ctex"]
+source_file="res://icons/eyes/void_eyes.png"
+dest_files=["res://.godot/imported/void_eyes.png-52246e6104029b80261961ec4fce214b.ctex"]
 
 [params]
 

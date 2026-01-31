@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://jdtykg5h4bro"]
+
+[ext_resource type="Script" path="res://scenes/dialogue_box.gd" id="1_r2og1"]
+[ext_resource type="Script" path="res://scenes/npc.gd" id="2_giuoe"]
+
+[node name="DialogueBox" type="Control" unique_id=2074582808 groups=["DialogueBox"]]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r2og1")
+
+[node name="Panel" type="Panel" parent="." unique_id=706955461]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1927847479]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="Panel/VBoxContainer" unique_id=159471586]
+layout_mode = 2
+
+[node name="TextLabel" type="RichTextLabel" parent="Panel/VBoxContainer" unique_id=416186015]
+layout_mode = 2
+bbcode_enabled = true
+text = "Salve, ho bisogno di una maschera con LENTI."
+
+[node name="NextButton" type="Button" parent="Panel/VBoxContainer" unique_id=1525067320]
+layout_mode = 2
+
+[node name="NPC" type="Node2D" parent="Panel/VBoxContainer" unique_id=1732182253]
+script = ExtResource("2_giuoe")
