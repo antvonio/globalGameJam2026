@@ -1,10 +1,94 @@
-[gd_scene format=3 uid="uid://c7miwe12iwou7"]
+[gd_scene format=3 uid="uid://bl23hoilxe7ft"]
 
 [ext_resource type="Script" uid="uid://cik0ussfsyaun" path="res://scripts/character_body_2d.gd" id="1_xcsyh"]
-[ext_resource type="Texture2D" uid="uid://dc2isconkacd0" path="res://assets/Mask_test.png" id="2_yffxe"]
+[ext_resource type="Shader" uid="uid://bmh6v6gyp6hyg" path="res://scenes/project.gdshader" id="2_xcsyh"]
+
+[sub_resource type="Theme" id="Theme_yffxe"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pvjuf"]
+shader = ExtResource("2_xcsyh")
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=405593704]
 script = ExtResource("1_xcsyh")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1645913075]
-texture = ExtResource("2_yffxe")
+[node name="Shape" type="TextureRect" parent="." unique_id=43854273]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_yffxe")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Theme" type="TextureRect" parent="." unique_id=307679403]
+material = SubResource("ShaderMaterial_pvjuf")
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Eyes" type="TextureRect" parent="." unique_id=325383527]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Mouth" type="TextureRect" parent="." unique_id=910102388]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Top" type="TextureRect" parent="." unique_id=110650699]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5

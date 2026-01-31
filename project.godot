@@ -11,9 +11,19 @@ config_version=5
 [application]
 
 config/name="Global Game Jam Team Nero"
-run/main_scene="uid://bwjxkbsro36xq"
+run/main_scene="uid://bsfapxwwdp2f6"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icons/icon.svg"
+
+[autoload]
+
+G_ItemDB="*uid://cbj1jllypqw2j"
+
+[internationalization]
+
+rendering/autoload_on_startup=false
+rendering/size/viewport_height=648
+rendering/size/viewport_width=1152
 
 [physics]
 

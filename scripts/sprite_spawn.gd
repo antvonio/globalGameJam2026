@@ -14,7 +14,6 @@ func _process(delta):
 func spawn_sprite():
 	var sprite = sprite_scene.instantiate()
 	var rect = get_viewport().get_visible_rect()
-	sprite.position = Vector2(
-		randf_range(0, rect.size.x), -200
-	)
+
+	sprite.position = Vector2(randf_range(0, rect.size.x), -200)
 	add_child(sprite)

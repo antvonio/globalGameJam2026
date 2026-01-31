@@ -19,4 +19,4 @@ func _ready():
 	for theme in item_db.THEMES:
 		inventory.add_item(theme.name, theme.icon, "themes")
 
-	inventory_ready.emit()
+	inventory_ready.emit("shapes")
