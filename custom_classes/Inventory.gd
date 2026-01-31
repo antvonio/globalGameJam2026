@@ -3,10 +3,10 @@ extends Resource
 class_name Inventory
 
 var inventory: Dictionary = {
-	"bases": [],
+	"shapes": [],
+	"themes": [],
 	"eyes": [],
 	"mouths": [],
-	"motives": [],
 	"tops": []
 }
 
