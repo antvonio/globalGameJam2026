@@ -1,6 +1,7 @@
 extends Node
 class_name ItemDB
 
+
 const SHAPES = [
 	{
 		"name": "Triple Spike",

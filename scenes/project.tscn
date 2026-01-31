@@ -6,7 +6,7 @@
 [ext_resource type="Shader" uid="uid://bmh6v6gyp6hyg" path="res://scenes/project.gdshader" id="2_r1lkl"]
 [ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://scripts/InventoryManager.gd" id="3_r1lkl"]
 [ext_resource type="Script" uid="uid://dla3q0mj8ujvh" path="res://scenes/colorButton.gd" id="4_ioxnp"]
-[ext_resource type="Texture2D" uid="uid://btrj2bxlh8im7" path="res://icons/ui_assets/color_wheel.png" id="5_6ipd3"]
+[ext_resource type="Texture2D" uid="uid://btrj2bxlh8im7" path="res://icons/UI_Assets/color_wheel.png" id="5_6ipd3"]
 [ext_resource type="Script" uid="uid://vpriluoayk8n" path="res://scenes/section_color.gd" id="5_djuk3"]
 [ext_resource type="Script" uid="uid://cbj1jllypqw2j" path="res://scenes/ItemDB.gd" id="6_uthkf"]
 
@@ -16,7 +16,67 @@
 shader = ExtResource("2_r1lkl")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uthkf"]
-bg_color = Color(1, 0, 0.1833334, 1)
+bg_color = Color(1, 0.7019608, 0.7294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ipd3"]
+bg_color = Color(1, 0.8745098, 0.7294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyn5d"]
+bg_color = Color(1, 1, 0.7294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsnwd"]
+bg_color = Color(0.7294118, 1, 0.7882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sa0gx"]
+bg_color = Color(0.7294118, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agq83"]
+bg_color = Color(0.7294118, 0.7294118, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3560t"]
+bg_color = Color(0.85490197, 0.7294118, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7mxu"]
+bg_color = Color(0.9019608, 0.22352941, 0.27450982, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16j4j"]
+bg_color = Color(0.95686275, 0.63529414, 0.38039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5bpg"]
+bg_color = Color(0.9137255, 0.76862746, 0.41568628, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85ml3"]
+bg_color = Color(0.16470589, 0.6156863, 0.56078434, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y13gh"]
+bg_color = Color(0.27058825, 0.48235294, 0.6156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ee15a"]
+bg_color = Color(0.11372549, 0.20784314, 0.34117648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dpntg"]
+bg_color = Color(0.5137255, 0.21960784, 0.9254902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ajwdi"]
+bg_color = Color(0.60784316, 0.13333334, 0.14901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pg1mb"]
+bg_color = Color(0.6901961, 0.40392157, 0.1764706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lh47e"]
+bg_color = Color(0.6509804, 0.5411765, 0.19215687, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_atj2c"]
+bg_color = Color(0.105882354, 0.36862746, 0.34117648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1333t"]
+bg_color = Color(0.12941177, 0.32156864, 0.44705883, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ncxnq"]
+bg_color = Color(0.05882353, 0.11764706, 0.23529412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjhv5"]
+bg_color = Color(0.30980393, 0.11372549, 0.52156866, 1)
 
 [node name="UI" type="Control" unique_id=297674763]
 layout_mode = 3
@@ -165,7 +225,6 @@ theme_override_constants/v_separation = 20
 columns = 4
 
 [node name="ColorContent" type="GridContainer" parent="MaskPieces" unique_id=1458212082]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -186,6 +245,126 @@ columns = 7
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_uthkf")
+script = ExtResource("4_ioxnp")
+
+[node name="Button2" type="Button" parent="MaskPieces/ColorContent" unique_id=1378566466]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_6ipd3")
+script = ExtResource("4_ioxnp")
+
+[node name="Button3" type="Button" parent="MaskPieces/ColorContent" unique_id=1542077303]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_hyn5d")
+script = ExtResource("4_ioxnp")
+
+[node name="Button4" type="Button" parent="MaskPieces/ColorContent" unique_id=790676247]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dsnwd")
+script = ExtResource("4_ioxnp")
+
+[node name="Button5" type="Button" parent="MaskPieces/ColorContent" unique_id=153944964]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_sa0gx")
+script = ExtResource("4_ioxnp")
+
+[node name="Button6" type="Button" parent="MaskPieces/ColorContent" unique_id=1452487400]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_agq83")
+script = ExtResource("4_ioxnp")
+
+[node name="Button7" type="Button" parent="MaskPieces/ColorContent" unique_id=1314610616]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_3560t")
+script = ExtResource("4_ioxnp")
+
+[node name="Button8" type="Button" parent="MaskPieces/ColorContent" unique_id=561612080]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_a7mxu")
+script = ExtResource("4_ioxnp")
+
+[node name="Button9" type="Button" parent="MaskPieces/ColorContent" unique_id=1246927034]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16j4j")
+script = ExtResource("4_ioxnp")
+
+[node name="Button10" type="Button" parent="MaskPieces/ColorContent" unique_id=750855184]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_t5bpg")
+script = ExtResource("4_ioxnp")
+
+[node name="Button11" type="Button" parent="MaskPieces/ColorContent" unique_id=956532357]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_85ml3")
+script = ExtResource("4_ioxnp")
+
+[node name="Button12" type="Button" parent="MaskPieces/ColorContent" unique_id=2567695]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_y13gh")
+script = ExtResource("4_ioxnp")
+
+[node name="Button13" type="Button" parent="MaskPieces/ColorContent" unique_id=931665900]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee15a")
+script = ExtResource("4_ioxnp")
+
+[node name="Button14" type="Button" parent="MaskPieces/ColorContent" unique_id=1160469465]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dpntg")
+script = ExtResource("4_ioxnp")
+
+[node name="Button15" type="Button" parent="MaskPieces/ColorContent" unique_id=400352490]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ajwdi")
+script = ExtResource("4_ioxnp")
+
+[node name="Button16" type="Button" parent="MaskPieces/ColorContent" unique_id=436692593]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_pg1mb")
+script = ExtResource("4_ioxnp")
+
+[node name="Button17" type="Button" parent="MaskPieces/ColorContent" unique_id=810763288]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_lh47e")
+script = ExtResource("4_ioxnp")
+
+[node name="Button18" type="Button" parent="MaskPieces/ColorContent" unique_id=2080074375]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_atj2c")
+script = ExtResource("4_ioxnp")
+
+[node name="Button19" type="Button" parent="MaskPieces/ColorContent" unique_id=963732665]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1333t")
+script = ExtResource("4_ioxnp")
+
+[node name="Button20" type="Button" parent="MaskPieces/ColorContent" unique_id=1688648385]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ncxnq")
+script = ExtResource("4_ioxnp")
+
+[node name="Button21" type="Button" parent="MaskPieces/ColorContent" unique_id=414866324]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_hjhv5")
 script = ExtResource("4_ioxnp")
 
 [node name="TopBar" type="GridContainer" parent="MaskPieces" unique_id=1383723580]
