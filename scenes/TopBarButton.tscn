@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b6lkg63hc7hpa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udjck"]
+bg_color = Color(0.34998897, 0.48212677, 0.416896, 1)
+
+[node name="TopBarButton" type="Button" unique_id=1466232993]
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_udjck")
+text = "click me
+"

@@ -1,11 +1,8 @@
 [gd_scene format=3 uid="uid://bgedchu7o066v"]
 
-[ext_resource type="Script" uid="uid://c43l14sx3cv75" path="res://scripts/MaskRenderer.gd" id="1_2hkg8"]
 [ext_resource type="Script" uid="uid://cfsdnq3d4h2u3" path="res://scripts/UIMaskHandler.gd" id="1_nbemg"]
 [ext_resource type="Script" uid="uid://dlgvk6a76qwkn" path="res://scripts/MaskManager.gd" id="2_6xffl"]
 [ext_resource type="Script" uid="uid://chyxvugckvb55" path="res://scripts/InventoryManager.gd" id="3_r1lkl"]
-
-[sub_resource type="Theme" id="Theme_2hkg8"]
 
 [node name="UI" type="Control" unique_id=297674763]
 layout_mode = 3
@@ -34,93 +31,6 @@ offset_right = -77.0
 offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2hkg8")
-
-[node name="Shape" type="TextureRect" parent="Mask" unique_id=300653008]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_2hkg8")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Theme" type="TextureRect" parent="Mask" unique_id=575538298]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Eyes" type="TextureRect" parent="Mask" unique_id=14112242]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Mouth" type="TextureRect" parent="Mask" unique_id=1427189730]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Top" type="TextureRect" parent="Mask" unique_id=1193660658]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
 
 [node name="MaskPieces" type="Panel" parent="." unique_id=1451109478]
 layout_mode = 1
@@ -163,6 +73,9 @@ offset_bottom = 69.0
 grow_horizontal = 2
 theme_override_constants/h_separation = 46
 columns = 5
+
+[node name="MaskBase" type="Sprite2D" parent="." unique_id=879185215]
+position = Vector2(859, 321)
 
 [node name="InventoryManager" type="Node2D" parent="." unique_id=1683765417]
 script = ExtResource("3_r1lkl")

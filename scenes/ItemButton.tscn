@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://craojagi6e2fn"]
+
+[ext_resource type="Texture2D" uid="uid://bj8yluknwul41" path="res://icons/mask.png" id="1_ps3q3"]
+[ext_resource type="Script" uid="uid://cviwjpl8li78u" path="res://scripts/button_test.gd" id="2_0kkfq"]
+
+[node name="ItemButton" type="TextureButton" unique_id=2102931812]
+z_index = 1
+custom_minimum_size = Vector2(100, 100)
+offset_right = 128.0
+offset_bottom = 128.0
+size_flags_vertical = 0
+script = ExtResource("2_0kkfq")
+new_texture = "res://icons/icon.svg"
+
+[node name="Texture" type="TextureRect" parent="." unique_id=363092855]
+custom_minimum_size = Vector2(90, 90)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ps3q3")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
