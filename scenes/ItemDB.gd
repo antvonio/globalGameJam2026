@@ -110,61 +110,6 @@ const EYES = [
 #Top e themes
 const ACCESSORIES = [
 	{
-		"name": "Dragon Scales",
-		"icon": preload("res://icons/themes/scales.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Diamonds",
-		"icon": preload("res://icons/themes/diamonds.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Elegant",
-		"icon": preload("res://icons/themes/elegant.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Flowers",
-		"icon": preload("res://icons/themes/flowers.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Netted",
-		"icon": preload("res://icons/themes/netted.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Pois",
-		"icon": preload("res://icons/themes/pois.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Puzzle",
-		"icon": preload("res://icons/themes/puzzle.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Skulls",
-		"icon": preload("res://icons/themes/skulls.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Squares",
-		"icon": preload("res://icons/themes/squares.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Stars",
-		"icon": preload("res://icons/themes/stars.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Zebra",
-		"icon": preload("res://icons/themes/zebra.png"),
-		"cost": 5,
-	},
-	{
 		"name": "Cross",
 		"icon": preload("res://icons/tops/cross.png"),
 		"cost": 5,
@@ -237,6 +182,64 @@ const ACCESSORIES = [
 	{
 		"name": "Tophat",
 		"icon": preload("res://icons/tops/tophat.png"),
+		"cost": 5,
+	}
+]
+
+const THEMES = [
+	{
+		"name": "Dragon Scales",
+		"icon": preload("res://icons/themes/scales.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Diamonds",
+		"icon": preload("res://icons/themes/diamonds.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Elegant",
+		"icon": preload("res://icons/themes/elegant.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Flowers",
+		"icon": preload("res://icons/themes/flowers.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Netted",
+		"icon": preload("res://icons/themes/netted.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Pois",
+		"icon": preload("res://icons/themes/pois.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Puzzle",
+		"icon": preload("res://icons/themes/puzzle.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Skulls",
+		"icon": preload("res://icons/themes/skulls.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Squares",
+		"icon": preload("res://icons/themes/squares.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Stars",
+		"icon": preload("res://icons/themes/stars.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Zebra",
+		"icon": preload("res://icons/themes/zebra.png"),
 		"cost": 5,
 	}
 ]
