@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://bwjxkbsro36xq"]
+
+[ext_resource type="Script" uid="uid://djv2w2r2y1x2w" path="res://scripts/start_button.gd" id="1_l6cm7"]
+[ext_resource type="PackedScene" uid="uid://bgedchu7o066v" path="res://scenes/project.tscn" id="2_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://gpw1r660ggqe" path="res://background.png" id="3_bqqt6"]
+[ext_resource type="Script" uid="uid://c5khhfwkn2uwq" path="res://scripts/sprite_spawn.gd" id="4_rtw2f"]
+[ext_resource type="PackedScene" uid="uid://dggnjx6dsei4r" path="res://scenes/FallingMask.tscn" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://ccpvlf06odj4f" path="res://scripts/falling_sprite.gd" id="5_8ln24"]
+[ext_resource type="PackedScene" uid="uid://c7miwe12iwou7" path="res://scenes/character_body_2d_falling.tscn" id="7_oa1go"]
+
+[sub_resource type="FontFile" id="FontFile_ekxnf"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+
+[node name="MainMenu" type="Control" unique_id=658842740]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=1636009529]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="Panel" parent="." unique_id=278793949]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="Panel" parent="Menu" unique_id=2013087420]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="Menu/VBoxContainer" unique_id=652492601]
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -15.5
+offset_right = 46.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8180024, 0.78133327, 0.76262283, 1)
+theme_override_font_sizes/font_size = 25
+text = "Press Start"
+script = ExtResource("1_l6cm7")
+game_scene = ExtResource("2_ekxnf")
+
+[node name="Title" type="Label" parent="Menu/VBoxContainer" unique_id=465272093]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.5
+offset_top = 150.0
+offset_right = 76.5
+offset_bottom = 173.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.79737824, 0.28447333, 0.1806244, 1)
+theme_override_colors/font_shadow_color = Color(0.14509805, 0.14509805, 0.14509805, 0.32156864)
+theme_override_colors/font_outline_color = Color(0.76409525, 0.59512824, 0.3027525, 1)
+theme_override_fonts/font = SubResource("FontFile_ekxnf")
+theme_override_font_sizes/font_size = 64
+text = "It's Always Carnival!"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=280746198]
+z_index = -10
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 668.0
+mouse_filter = 2
+texture = ExtResource("3_bqqt6")
+
+[node name="AnimationLayer" type="Node2D" parent="." unique_id=31890137]
+script = ExtResource("4_rtw2f")
+sprite_scene = ExtResource("7_oa1go")
+
+[node name="Sprite2D" parent="AnimationLayer" unique_id=1208677844 instance=ExtResource("4_wu84c")]
+script = ExtResource("5_8ln24")
+
+[node name="CharacterBody2D" parent="AnimationLayer" unique_id=405593704 instance=ExtResource("7_oa1go")]
+position = Vector2(1008, -10)
