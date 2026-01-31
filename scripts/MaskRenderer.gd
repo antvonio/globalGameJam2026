@@ -12,13 +12,24 @@ extends Panel
 func _ready() -> void:
 	mask_manager.mask.mask_changed.connect(_on_mask_changed)
 
+func _apply_mask_to_theme() -> void:
+	var mat := maskTheme.material as ShaderMaterial
+	if mat == null:
+		push_error("Theme non ha ShaderMaterial!")
+		return
+	if shape.texture == null:
+		return
+	mat.set_shader_parameter("mask_tex", shape.texture)
+	
 func _on_mask_changed(attribute: String, tex: Texture2D) -> void:
 	print("mask_changed")
 	match attribute:
 		"shapes":
 			shape.texture = tex
+			_apply_mask_to_theme()
 		"themes":
 			maskTheme.texture = tex
+			_apply_mask_to_theme()
 		"eyes":
 			eyes.texture = tex
 		"mouths":
