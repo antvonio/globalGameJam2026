@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://82blfs3fi1pb"
-path="res://.godot/imported/maschera_1.png-9c77420386996383ee2b27c1a2aedd47.ctex"
+path="res://.godot/imported/maschera_1.png-2bb80a0957095985535797007f088116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/UI_Assets/maschera_1.png"
-dest_files=["res://.godot/imported/maschera_1.png-9c77420386996383ee2b27c1a2aedd47.ctex"]
+source_file="res://icons/ui_assets/maschera_1.png"
+dest_files=["res://.godot/imported/maschera_1.png-2bb80a0957095985535797007f088116.ctex"]
 
 [params]
 
