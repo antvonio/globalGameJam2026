@@ -394,6 +394,7 @@ theme_override_constants/h_separation = 46
 columns = 5
 
 [node name="ColorButton" type="TextureButton" parent="MaskPieces" unique_id=1914086068]
+visible = false
 custom_minimum_size = Vector2(57, 57)
 layout_mode = 1
 anchors_preset = 1
