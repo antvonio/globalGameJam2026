@@ -162,23 +162,6 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Mouth" type="TextureRect" parent="Mask" unique_id=1427189730]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -40.5
-offset_top = -44.0
-offset_right = 49.5
-offset_bottom = 46.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
 [node name="Top" type="TextureRect" parent="Mask" unique_id=1193660658]
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 1

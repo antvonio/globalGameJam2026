@@ -158,7 +158,7 @@ const EYES = [
 	}
 ]
 
-#Top e themes
+#Tops
 const ACCESSORIES = [
 	{
 		"name": "Cross",
@@ -286,11 +286,6 @@ const THEMES = [
 	{
 		"name": "Stars",
 		"icon": preload("res://icons/themes/stars.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Zebra",
-		"icon": preload("res://icons/themes/zebra.png"),
 		"cost": 5,
 	}
 ]

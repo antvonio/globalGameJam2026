@@ -6,7 +6,6 @@ var content: Dictionary = {
 	"shapes": [],
 	"themes": [],
 	"eyes": [],
-	"mouths": [],
 	"tops": []
 }
 

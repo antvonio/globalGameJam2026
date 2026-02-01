@@ -6,7 +6,6 @@ extends Panel
 @onready var shape: TextureRect = maskPanel.get_node("Shape")
 @onready var maskTheme: TextureRect = maskPanel.get_node("Theme")
 @onready var eyes: TextureRect = maskPanel.get_node("Eyes")
-@onready var mouth: TextureRect = maskPanel.get_node("Mouth")
 @onready var top: TextureRect = maskPanel.get_node("Top")
 
 
@@ -33,7 +32,5 @@ func _on_mask_changed(attribute: String, tex: Texture2D) -> void:
 			_apply_mask_to_theme()
 		"eyes":
 			eyes.texture = tex
-		"mouths":
-			mouth.texture = tex
 		"tops":
 			top.texture = tex
