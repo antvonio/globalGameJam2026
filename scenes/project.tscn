@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://scenes/section_color.gd" id="5_djuk3"]
 [ext_resource type="Script" uid="uid://cbj1jllypqw2j" path="res://scenes/ItemDB.gd" id="6_uthkf"]
 [ext_resource type="PackedScene" uid="uid://jdtykg5h4bro" path="res://scenes/DialogueBox.tscn" id="10_hyn5d"]
-[ext_resource type="Script" path="res://scenes/talk_button.gd" id="11_dsnwd"]
 [ext_resource type="Script" uid="uid://ccd3nenpxsiyx" path="res://scripts/npc.gd" id="12_sa0gx"]
 
 [sub_resource type="Theme" id="Theme_2hkg8"]
@@ -228,6 +227,7 @@ theme_override_constants/v_separation = 20
 columns = 4
 
 [node name="ColorContent" type="GridContainer" parent="MaskPieces" unique_id=1458212082]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -398,6 +398,10 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("5_djuk3")
 
+[node name="NPC" type="Node2D" parent="MaskPieces" unique_id=786657073]
+position = Vector2(-45, -40)
+script = ExtResource("12_sa0gx")
+
 [node name="InventoryManager" type="Node2D" parent="." unique_id=1683765417]
 script = ExtResource("3_r1lkl")
 
@@ -415,8 +419,3 @@ layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 text = "Parla"
-script = ExtResource("11_dsnwd")
-npc_path = NodePath("../NPC")
-
-[node name="NPC" type="Node2D" parent="." unique_id=786657073]
-script = ExtResource("12_sa0gx")

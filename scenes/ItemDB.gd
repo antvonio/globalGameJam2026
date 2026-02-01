@@ -6,32 +6,17 @@ const SHAPES = [
 	{
 		"name": "Triple Spike",
 		"icon": preload("res://icons/shapes/triple_spiked.png"),
-		"cost": 5,
+		"cost": 15,
 	},
 	{
 		"name": "Butterfly",
 		"icon": preload("res://icons/shapes/butterfly.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Carnival",
-		"icon": preload("res://icons/shapes/carnival.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Classic",
-		"icon": preload("res://icons/shapes/classic.png"),
-		"cost": 5,
+		"cost": 10,
 	},
 	{
 		"name": "Demon",
 		"icon": preload("res://icons/shapes/demon.png"),
-		"cost": 5,
-	},
-	{
-		"name": "Half face",
-		"icon": preload("res://icons/shapes/half_face.png"),
-		"cost": 5,
+		"cost": 20,
 	},
 	{
 		"name": "Heart",
@@ -41,18 +26,63 @@ const SHAPES = [
 	{
 		"name": "Mouth",
 		"icon": preload("res://icons/shapes/mouth.png"),
-		"cost": 5,
+		"cost": 10,
 	},
 	{
 		"name": "Squirrel",
 		"icon": preload("res://icons/shapes/squirrel.png"),
+		"cost": 15,
+	},
+	{
+		"name": "Cat",
+		"icon": preload("res://icons/shapes/cat.png"),
+		"cost": 20,
+	},
+	{
+		"name": "Clown",
+		"icon": preload("res://icons/shapes/clown.png"),
+		"cost": 30,
+	},
+	{
+		"name": "Forest",
+		"icon": preload("res://icons/shapes/forest.png"),
+		"cost": 35,
+	},
+	{
+		"name": "Hero",
+		"icon": preload("res://icons/shapes/hero.png"),
+		"cost": 15,
+	},
+	{
+		"name": "Jim",
+		"icon": preload("res://icons/shapes/jim.png"),
+		"cost": 10,
+	},
+	{
+		"name": "Killer",
+		"icon": preload("res://icons/shapes/killer.png"),
 		"cost": 5,
 	},
 	{
-		"name": "Woman",
-		"icon": preload("res://icons/shapes/woman.png"),
+		"name": "Rat",
+		"icon": preload("res://icons/shapes/rat.png"),
+		"cost": 15,
+	},
+	{
+		"name": "Sans",
+		"icon": preload("res://icons/shapes/sans.png"),
 		"cost": 5,
 	},
+	{
+		"name": "Soul",
+		"icon": preload("res://icons/shapes/soul.png"),
+		"cost": 25,
+	},
+	{
+		"name": "Enigmatic",
+		"icon": preload("res://icons/shapes/enigm.png"),
+		"cost": 5,
+	}
 ]
 
 const EYES = [
@@ -104,6 +134,26 @@ const EYES = [
 	{
 		"name": "Void Eyes",
 		"icon": preload("res://icons/eyes/void_eyes.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Classic Eyes",
+		"icon": preload("res://icons/eyes/classic_eyes.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Moon Eyes",
+		"icon": preload("res://icons/eyes/moon_eyes.png"),
+		"cost": 5,
+	},
+	{
+		"name": "One Eye",
+		"icon": preload("res://icons/eyes/one_eye.png"),
+		"cost": 5,
+	},
+	{
+		"name": "Robot Eyes",
+		"icon": preload("res://icons/eyes/robot_eyes.png"),
 		"cost": 5,
 	}
 ]
