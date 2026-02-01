@@ -1,4 +1,4 @@
-extends TextureRect
+extends Panel
 
 @onready var mask_manager: MaskManager = get_parent().get_node("MaskManager")
 
