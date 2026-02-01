@@ -249,11 +249,6 @@ const THEMES = [
 		"cost": 5,
 	},
 	{
-		"name": "Elegant",
-		"icon": preload("res://icons/themes/elegant.png"),
-		"cost": 5,
-	},
-	{
 		"name": "Flowers",
 		"icon": preload("res://icons/themes/flowers.png"),
 		"cost": 5,
