@@ -3,12 +3,14 @@ extends Control
 @export var target_position_y: float = 50.0
 @export var duration: float = 2.0
 @export var request_delay: float = 3.0
+@export var current_customer: String
 
 const customers = [
-	{"icon": preload("res://icons/customerSceneAssets/customers/monsterIdle.png")},
-	{"icon": preload("res://icons/customerSceneAssets/customers/gene.png")},
-	{"icon": preload("res://icons/customerSceneAssets/customers/collector_goblin.png")},
-	{"icon": preload("res://icons/customerSceneAssets/customers/oldbat.png")},
+	{"name": "monster", "icon": preload("res://icons/customerSceneAssets/customers/monsterIdle.png")},
+	{"name": "gene", "icon": preload("res://icons/customerSceneAssets/customers/gene.png"), "happy": preload("res://icons/customerSceneAssets/customers/gene_happy.png"), "angry": preload("res://icons/customerSceneAssets/customers/gene_angry.png")},
+	{"name": "collector_goblin", "icon": preload("res://icons/customerSceneAssets/customers/collector_goblin.png"), "happy": preload("res://icons/customerSceneAssets/customers/collector_goblin_happy.png"), "angry": preload("res://icons/customerSceneAssets/customers/collector_goblin_angry.png")},
+	{"name": "oldbat", "icon": preload("res://icons/customerSceneAssets/customers/oldbat.png"), "happy": preload("res://icons/customerSceneAssets/customers/oldbat_happy.png"), "angry": preload("res://icons/customerSceneAssets/customers/oldbat_angry.png")},
+	{"name": "gman", "icon": preload("res://icons/customerSceneAssets/customers/gman.png"), "happy": preload("res://icons/customerSceneAssets/customers/gman_happy.png"), "angry": preload("res://icons/customerSceneAssets/customers/gman_angry.png")},
 ]
 
 @onready var customerSprite: TextureRect = $CustomerSprite
@@ -60,6 +62,7 @@ func tween_customer() -> void:
 
 func new_customer() -> void:
 	var random_customer: Dictionary = customers.pick_random()
+	current_customer = random_customer.name
 	customerSprite.texture = random_customer["icon"]
 	tween_customer()
 
@@ -81,6 +84,20 @@ func spawn_customer_and_request(new) -> void:
 	# ✅ genera richiesta casuale (per ora random puro)
 	generate_random_request()
 
+func animate_sprite(happy: bool):
+	if current_customer == "monster":
+		return
+		
+	var customerData 
+	for customer in customers:
+		if customer.name == current_customer:
+			customerData = customer
+			break
+	if happy:
+		customerSprite.texture = customerData.happy
+	else:
+		customerSprite.texture = customerData.angry
+		
 func update_mask_sprite():
 	requestedMaskSprite.hide()
 	req_shape.texture = request_mask.content["shapes"]
@@ -92,6 +109,7 @@ func update_mask_sprite():
 	requestedMaskSprite.show()
 		
 func generate_random_request() -> void:
+	requestedMaskSprite.show()
 	# qui puoi decidere cosa significa "richiesta casuale"
 	# esempio: sceglie una categoria a caso e una texture a caso (o una lista di tag)
 	request_mask.content["shapes"] = G_ItemDB.SHAPES.pick_random().icon
@@ -104,6 +122,7 @@ func generate_random_request() -> void:
 	print("Richiesta generata!")
 
 func accept_customer() -> void:
+	requestedMaskSprite.hide()
 	customer_root.hide()
 	ui.show()
 

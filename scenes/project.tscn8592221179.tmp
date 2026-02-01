@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://vpriluoayk8n" path="res://scenes/section_color.gd" id="5_djuk3"]
 [ext_resource type="Script" uid="uid://cbj1jllypqw2j" path="res://scenes/ItemDB.gd" id="6_uthkf"]
 [ext_resource type="Texture2D" uid="uid://b4t0jw02sre5v" path="res://icons/ui_assets/dialoguebox1.png" id="10_hyn5d"]
+[ext_resource type="Script" uid="uid://klw5vroeioft" path="res://scenes/finalize_mask.gd" id="11_dsnwd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtfrk"]
 bg_color = Color(0.8480598, 0.63207555, 0.37818563, 1)
@@ -95,6 +96,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("11_dsnwd")
 
 [node name="Background" type="Panel" parent="." unique_id=210280931]
 layout_mode = 1

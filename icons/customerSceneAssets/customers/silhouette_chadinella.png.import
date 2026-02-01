@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6ynvtia74qmm"
-path="res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"
+uid="uid://bi4wuodh01twe"
+path="res://.godot/imported/silhouette_chadinella.png-7a730e2b73dbd0b2137952611d6789c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/ui_assets/calendario.png"
-dest_files=["res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"]
+source_file="res://icons/customerSceneAssets/customers/silhouette_chadinella.png"
+dest_files=["res://.godot/imported/silhouette_chadinella.png-7a730e2b73dbd0b2137952611d6789c6.ctex"]
 
 [params]
 

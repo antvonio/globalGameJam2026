@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6ynvtia74qmm"
-path="res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"
+uid="uid://doahbd82d3q0g"
+path="res://.godot/imported/oldbat_happy.png-b319ce1dbfe0f6729f6d5c64acc3c9ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/ui_assets/calendario.png"
-dest_files=["res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"]
+source_file="res://icons/customerSceneAssets/customers/oldbat_happy.png"
+dest_files=["res://.godot/imported/oldbat_happy.png-b319ce1dbfe0f6729f6d5c64acc3c9ae.ctex"]
 
 [params]
 

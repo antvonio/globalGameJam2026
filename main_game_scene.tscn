@@ -1,9 +1,28 @@
 [gd_scene format=3 uid="uid://dr688s5vwv1kb"]
 
 [ext_resource type="PackedScene" uid="uid://d1dt765byxeh7" path="res://scenes/customer.tscn" id="1_qmwpp"]
+[ext_resource type="Script" uid="uid://klw5vroeioft" path="res://scenes/finalize_mask.gd" id="1_uaptj"]
+[ext_resource type="Script" uid="uid://c3ptn83nkyrvd" path="res://MainGame.gd" id="1_wpvyo"]
 [ext_resource type="PackedScene" uid="uid://bgedchu7o066v" path="res://scenes/project.tscn" id="2_wpvyo"]
-[ext_resource type="Texture2D" uid="uid://dguumr8qqxvik" path="res://icons/ui_assets/soldi.png" id="3_s4q73"]
-[ext_resource type="Texture2D" uid="uid://c6ynvtia74qmm" path="res://icons/ui_assets/calendario.png" id="4_uaptj"]
+[ext_resource type="PackedScene" uid="uid://djt0n3ayoldkt" path="res://scenes/main_menu.tscn" id="4_s4q73"]
+[ext_resource type="Texture2D" uid="uid://by0wm1ctfrqvm" path="res://icons/ui_assets/timer.png" id="6_fof2l"]
+[ext_resource type="Texture2D" uid="uid://namn8xh1n30u" path="res://icons/customerSceneAssets/customers/chadinella.png" id="7_7khgq"]
+[ext_resource type="Texture2D" uid="uid://bi4wuodh01twe" path="res://icons/customerSceneAssets/customers/silhouette_chadinella.png" id="8_5dduq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wpvyo"]
+bg_color = Color(0.38881654, 0.58665645, 0.98153335, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ghi0"]
+bg_color = Color(0.15, 0.15, 0.15, 1)
 
 [node name="Main" type="Control" unique_id=2089095526]
 layout_mode = 3
@@ -12,6 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uaptj")
 
 [node name="Customer" parent="." unique_id=431502094 instance=ExtResource("1_qmwpp")]
 layout_mode = 1
@@ -20,56 +40,90 @@ layout_mode = 1
 visible = false
 layout_mode = 1
 
-[node name="CashLabelRegister" type="Label" parent="." unique_id=431561511]
-z_index = 4
-layout_mode = 0
-offset_left = 109.34431
-offset_top = 385.5057
-offset_right = 165.22568
-offset_bottom = 410.6491
-rotation = 0.12391838
-text = "100.0"
+[node name="TimeBar" type="Control" parent="." unique_id=625423653]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -470.5
+offset_top = 20.0
+offset_right = 360.0
+offset_bottom = 42.0
+grow_horizontal = 2
+script = ExtResource("1_wpvyo")
+game_timer = 180
+menu_scene = ExtResource("4_s4q73")
 
-[node name="CashLabel2" type="Label" parent="." unique_id=1431618841]
-z_index = 6
-layout_mode = 0
-offset_left = 103.0
-offset_top = 36.0
-offset_right = 185.0
-offset_bottom = 61.0
-scale = Vector2(1, 0.95999974)
-text = "100.0"
-horizontal_alignment = 1
+[node name="Bar" type="Panel" parent="TimeBar" unique_id=1695764764]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 41.5
+offset_top = 1.0
+offset_right = 41.5
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wpvyo")
 
-[node name="CalendarLabel" type="Label" parent="." unique_id=277680884]
-z_index = 6
+[node name="Timer" type="TextureRect" parent="TimeBar" unique_id=917482658]
 layout_mode = 0
-offset_left = 346.0
-offset_top = 36.0
-offset_right = 423.0
-offset_bottom = 59.0
-scale = Vector2(0.96275777, 0.9539846)
-text = "100.0"
-horizontal_alignment = 1
-
-[node name="Cash" type="TextureRect" parent="." unique_id=2071537291]
-z_index = 5
-custom_minimum_size = Vector2(10, 10)
-layout_mode = 0
-offset_left = -36.0
-offset_top = -63.0
-offset_right = 264.0
-offset_bottom = 152.0
-texture = ExtResource("3_s4q73")
+offset_left = -27.5
+offset_top = -21.0
+offset_right = 58.5
+offset_bottom = 60.0
+texture = ExtResource("6_fof2l")
 expand_mode = 1
 
-[node name="Calendar" type="TextureRect" parent="." unique_id=1618332088]
-z_index = 5
-custom_minimum_size = Vector2(10, 10)
+[node name="End" type="Control" parent="." unique_id=1250300043]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="End" unique_id=1989214795]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1ghi0")
+
+[node name="Chadinella" type="TextureRect" parent="End" unique_id=964239370]
 layout_mode = 0
-offset_left = 200.0
-offset_top = -63.0
-offset_right = 500.0
-offset_bottom = 152.0
-texture = ExtResource("4_uaptj")
+offset_left = 96.0
+offset_top = 147.0
+offset_right = 700.0
+offset_bottom = 648.0
+mouse_filter = 2
+texture = ExtResource("7_7khgq")
 expand_mode = 1
+
+[node name="Silhouette" type="TextureRect" parent="End" unique_id=1036827019]
+z_index = 1
+layout_mode = 0
+offset_left = 96.0
+offset_top = 147.0
+offset_right = 700.0
+offset_bottom = 648.0
+mouse_filter = 2
+texture = ExtResource("8_5dduq")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="End" unique_id=361145205]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 216.0
+offset_right = 958.0
+offset_bottom = 282.0
+text = "SCORE: 0
+GIGACHAD-INELLA APPROVES"
+horizontal_alignment = 1
+uppercase = true
+visible_characters = 0
+visible_ratio = 0.0

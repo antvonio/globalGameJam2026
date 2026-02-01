@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6ynvtia74qmm"
-path="res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"
+uid="uid://cl5i5arvg6ynp"
+path="res://.godot/imported/collector_goblin_happy.png-1ad87f264d58730e4855ed0fe1277830.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/ui_assets/calendario.png"
-dest_files=["res://.godot/imported/calendario.png-90ffdf0b19c2f0a70798271399f8b2c4.ctex"]
+source_file="res://icons/customerSceneAssets/customers/collector_goblin_happy.png"
+dest_files=["res://.godot/imported/collector_goblin_happy.png-1ad87f264d58730e4855ed0fe1277830.ctex"]
 
 [params]
 
