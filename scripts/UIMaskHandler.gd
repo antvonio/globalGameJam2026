@@ -1,4 +1,4 @@
-extends Panel
+extends TextureRect
 
 # Frame
 @onready var TopBar = $TopBar

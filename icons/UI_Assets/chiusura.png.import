@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3wkhyewime51"
-path="res://.godot/imported/chiusura.png-5edcb6d13bc2528e012ef06e9121f9e6.ctex"
+path="res://.godot/imported/chiusura.png-d4cf7fca84d74437ce1b27752cf99c7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/UI_Assets/chiusura.png"
-dest_files=["res://.godot/imported/chiusura.png-5edcb6d13bc2528e012ef06e9121f9e6.ctex"]
+source_file="res://icons/ui_assets/chiusura.png"
+dest_files=["res://.godot/imported/chiusura.png-d4cf7fca84d74437ce1b27752cf99c7a.ctex"]
 
 [params]
 

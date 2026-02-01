@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djt0n3ayoldkt"]
 
 [ext_resource type="Script" path="res://scripts/start_button.gd" id="1_l6cm7"]
-[ext_resource type="PackedScene" uid="uid://bgedchu7o066v" path="res://scenes/project.tscn" id="2_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://dr688s5vwv1kb" path="res://main_game_scene.tscn" id="2_wu84c"]
 [ext_resource type="Script" uid="uid://c5khhfwkn2uwq" path="res://scripts/sprite_spawn.gd" id="4_rtw2f"]
 [ext_resource type="PackedScene" uid="uid://bl23hoilxe7ft" path="res://scenes/character_body_2d_falling.tscn" id="7_oa1go"]
 
@@ -79,7 +79,7 @@ theme_override_colors/font_color = Color(0.8180024, 0.78133327, 0.76262283, 1)
 theme_override_font_sizes/font_size = 25
 text = "Press Start"
 script = ExtResource("1_l6cm7")
-game_scene = ExtResource("2_ekxnf")
+game_scene = ExtResource("2_wu84c")
 
 [node name="Title" type="Label" parent="Menu/VBoxContainer" unique_id=465272093]
 visibility_layer = 4

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ya3hk13lvkin"
-path="res://.godot/imported/nuvoletta.png-848a1a33a056c9166f66b2d29bd89a3e.ctex"
+path="res://.godot/imported/nuvoletta.png-194b2c104084a7a8bd7b408840341b3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/UI_Assets/nuvoletta.png"
-dest_files=["res://.godot/imported/nuvoletta.png-848a1a33a056c9166f66b2d29bd89a3e.ctex"]
+source_file="res://icons/ui_assets/nuvoletta.png"
+dest_files=["res://.godot/imported/nuvoletta.png-194b2c104084a7a8bd7b408840341b3a.ctex"]
 
 [params]
 
