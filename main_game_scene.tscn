@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dr688s5vwv1kb"]
 
-[ext_resource type="PackedScene" uid="uid://d1dt765byxeh7" path="res://scenes/Customer.tscn" id="1_qmwpp"]
+[ext_resource type="PackedScene" uid="uid://d1dt765byxeh7" path="res://scenes/customer.tscn" id="1_qmwpp"]
 [ext_resource type="PackedScene" uid="uid://bgedchu7o066v" path="res://scenes/project.tscn" id="2_wpvyo"]
 [ext_resource type="Texture2D" uid="uid://dguumr8qqxvik" path="res://icons/ui_assets/soldi.png" id="3_s4q73"]
 [ext_resource type="Texture2D" uid="uid://c6ynvtia74qmm" path="res://icons/ui_assets/calendario.png" id="4_uaptj"]

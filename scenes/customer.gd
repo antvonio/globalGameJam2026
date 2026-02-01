@@ -44,6 +44,7 @@ func _apply_mask_to_theme() -> void:
 	mat.set_shader_parameter("mask_tex", req_shape.texture)
 
 func _ready() -> void:
+	print(main)
 	refuseButton.pressed.connect(refuse_customer)
 	acceptButton.pressed.connect(accept_customer)
 	await spawn_customer_and_request(false)
